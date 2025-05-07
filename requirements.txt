@@ -1,3 +1,5 @@
+tensorflow==2.19.0
+tf-keras
 fastapi
 uvicorn[standard]
 python-multipart
