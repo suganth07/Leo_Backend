@@ -1,4 +1,4 @@
-tensorflow==2.19.0
+tensorflow
 tf-keras
 deepface
 fastapi
@@ -9,8 +9,8 @@ httpx
 supabase
 python-dotenv
 google-api-python-client
-scipy==1.10.1
-pillow==11.2.1
-google-auth==2.40.1
-google-auth-httplib2==0.2.0
-supabase-client==2.15.1
+scipy
+pillow
+google-auth
+google-auth-httplib2
+supabase-client
