@@ -16,8 +16,8 @@ supabase-py
 
 # Face recognition with DeepFace
 deepface
-tensorflow==2.19.0
 tf-keras
+tensorflow==2.19.0
 
 # Optional: if you're using SSE (Server-Sent Events)
 sse-starlette
