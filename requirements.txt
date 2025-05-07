@@ -6,3 +6,4 @@ httpx
 deepface
 supabase
 python-dotenv
+google-api-python-client
