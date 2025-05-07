@@ -6,6 +6,7 @@ aiofiles
 httpx
 pydantic
 python-dotenv
+scipy
 
 # Google Drive and Supabase
 google-api-python-client
