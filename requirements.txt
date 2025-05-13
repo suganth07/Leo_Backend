@@ -1,3 +1,31 @@
+# # FastAPI app dependencies
+# fastapi
+# uvicorn[standard]
+# python-multipart
+# aiofiles
+# httpx
+# pydantic
+# python-dotenv
+# scipy
+
+# # Google Drive and Supabase
+# google-api-python-client
+# google-auth
+# google-auth-oauthlib
+# google-auth-httplib2
+# supabase
+
+# # Face recognition with DeepFace
+# deepface
+# tf-keras
+# tensorflow==2.19.0
+
+# # Optional: if you're using SSE (Server-Sent Events)
+# sse-starlette
+
+# # Optional: image processing (used by DeepFace internally too)
+# opencv-python-headless
+
 # FastAPI app dependencies
 fastapi
 uvicorn[standard]
@@ -18,7 +46,7 @@ supabase
 # Face recognition with DeepFace
 deepface
 tf-keras
-tensorflow==2.19.0
+tensorflow-cpu==2.19.0
 
 # Optional: if you're using SSE (Server-Sent Events)
 sse-starlette
