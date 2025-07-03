@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: leo-backend
+    env: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: GOOGLE_SERVICE_ACCOUNT_BASE64
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_KEY
+        sync: false
+      - key: PHOTOS_FOLDER_ID
+        sync: false

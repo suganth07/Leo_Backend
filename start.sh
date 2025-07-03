@@ -1,15 +1,17 @@
 #!/bin/bash
 
-# Startup script for Render deployment
-echo "Starting Leo Backend deployment..."
+# Startup script for Render deployment - Zero local storage approach
+echo "Starting Leo Backend deployment with zero local storage..."
 
-# Set environment variables for optimization
+# Set environment variables for memory optimization
 export PYTHONUNBUFFERED=1
-export NUMBA_CACHE_DIR=/tmp
-export INSIGHTFACE_HOME=/tmp/.insightface
+export TMPDIR=/tmp
 
-# Create necessary directories
-mkdir -p /tmp/.insightface
+# Optimize memory usage
+export MALLOC_TRIM_THRESHOLD_=100000
+export MALLOC_MMAP_THRESHOLD_=100000
+
+# No need to create any model directories - we're using face_recognition with dlib-binary
 
 # Start the application
-python sample.py
+exec uvicorn app:app --host 0.0.0.0 --port ${PORT:-10000}
