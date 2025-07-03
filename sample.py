@@ -61,9 +61,10 @@ supabase = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 # Photo root folder
 PHOTOS_FOLDER_ID = os.getenv("PHOTOS_FOLDER_ID")
 
-# Insightface Face Analysis
-face_app = FaceAnalysis(name='buffalo_l', providers=['CPUExecutionProvider'])
-face_app.prepare(ctx_id=0, det_size=(640, 640))
+# Insightface Face Analysis - Use lighter model for 512MB constraint
+model_name = 'buffalo_s'  # Smaller model than buffalo_l
+face_app = FaceAnalysis(name=model_name, providers=['CPUExecutionProvider'])
+face_app.prepare(ctx_id=0, det_size=(320, 320))  # Smaller detection size
 
 
 # Models
