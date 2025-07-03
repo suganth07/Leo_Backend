@@ -1,55 +1,15 @@
-# # FastAPI app dependencies
-# fastapi
-# uvicorn[standard]
-# python-multipart
-# aiofiles
-# httpx
-# pydantic
-# python-dotenv
-# scipy
-
-# # Google Drive and Supabase
-# google-api-python-client
-# google-auth
-# google-auth-oauthlib
-# google-auth-httplib2
-# supabase
-
-# # Face recognition with DeepFace
-# deepface
-# tf-keras
-# tensorflow==2.19.0
-
-# # Optional: if you're using SSE (Server-Sent Events)
-# sse-starlette
-
-# # Optional: image processing (used by DeepFace internally too)
-# opencv-python-headless
-
-# FastAPI app dependencies
-fastapi
-uvicorn[standard]
-python-multipart
-aiofiles
-httpx
-pydantic
-python-dotenv
-scipy
-
-# Google Drive and Supabase
-google-api-python-client
-google-auth
-google-auth-oauthlib
-google-auth-httplib2
-supabase
-
-# Face recognition with DeepFace
-deepface
-tf-keras
-tensorflow-cpu==2.19.0
-
-# Optional: if you're using SSE (Server-Sent Events)
-sse-starlette
-
-# Optional: image processing (used by DeepFace internally too)
-opencv-python-headless
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+google-api-python-client==2.108.0
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+pillow==10.1.0
+numpy==1.24.3
+supabase==1.3.0
+python-dotenv==1.0.0
+opencv-python-headless==4.8.1.78
+insightface==0.7.3
+onnxruntime==1.16.3
+requests==2.31.0
