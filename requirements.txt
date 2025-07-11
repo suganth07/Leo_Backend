@@ -1,0 +1,33 @@
+# FastAPI and web framework
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+python-multipart==0.0.20
+
+# Google APIs
+google-api-python-client==2.176.0
+google-auth==2.40.3
+google-auth-oauthlib==1.2.2
+google-auth-httplib2==0.2.0
+
+# Core ML for face recognition
+numpy==1.24.4
+opencv-python-headless==4.10.0.84
+Pillow==10.4.0
+
+# InsightFace and dependencies
+insightface==0.7.3
+onnxruntime==1.19.2
+scikit-learn==1.5.2
+scipy==1.13.1
+
+# HTTP and utilities
+requests==2.32.3
+httpx==0.27.2
+python-dotenv==1.0.1
+psutil==6.1.0
+
+# Database
+supabase==2.8.1
+
+# Additional utilities
+tqdm==4.67.1
